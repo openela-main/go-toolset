@@ -1,4 +1,4 @@
-%global go_version 1.19.13
+%global go_version 1.20.10
 
 Name: go-toolset
 Version: %{go_version}
@@ -18,23 +18,25 @@ This is the main package for go-toolset.
 %files
 
 %changelog
-* Fri Oct 13 2023 David Benoit <dbenoit@redhat.com> - 1.19.13-1
+* Fri Oct 13 2023 David Benoit <dbenoit@redhat.com> - 1.20.10-1
+- Update to Go 1.20.10
 - Fix CVE-2023-39325
-- Resolves: RHEL-12618
+- Midstream patches
+- Resolves: RHEL-12619
 
-* Tue Jun 6 2023 David Benoit <dbenoit@redhat.com> - 1.19.10-1
-- Update to Go 1.19.10
-- Resolves: rhbz#2217623
-- Resolves: rhbz#2217609
-- Resolves: rhbz#2217581
+* Tue Aug 01 2023 Alejandro Sáez <asm@redhat.com> - 1.20.6-1
+- Rebase to Go 1.20.6
+- Resolves: rhbz#2226901
 
-* Wed May 17 2023 Alejandro Sáez <asm@redhat.com> - 1.19.9-1
-- Rebase to Go 1.19.9
-- Resolves: rhbz#2204473
+* Wed May 31 2023 Alejandro Sáez <asm@redhat.com> - 1.20.4-1
+- Rebase to Go 1.20.4
+- Resolves: rhbz#2204474
 
-* Wed Mar 01 2023 David Benoit <dbenoit@redhat.com> - 1.19.6-1
-- Rebase to Go 1.19.6
-- Resolves: rhbz#2174430
+* Tue Apr 11 2023 David Benoit <dbenoit@redhat.com> - 1.20.3-1
+- Rebase to Go 1.20.3
+- Remove race archives
+- Update static tests patches
+- Resolves: rhbz#2185260
 
 * Wed Dec 21 2022 David Benoit <dbenoit@redhat.com> - 1.19.4-1
 - Rebase to Go 1.19.4
