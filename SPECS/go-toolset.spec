@@ -1,4 +1,4 @@
-%global go_version 1.20.10
+%global go_version 1.20.12
 
 Name: go-toolset
 Version: %{go_version}
@@ -18,6 +18,11 @@ This is the main package for go-toolset.
 %files
 
 %changelog
+* Tue Dec 12 2023 David Benoit <dbenoit@redhat.com> - 1.20.12-1
+- Update to Go 1.20.12
+- Fix CVE-2023-39326
+- Resolves: RHEL-19231
+
 * Fri Oct 13 2023 David Benoit <dbenoit@redhat.com> - 1.20.10-1
 - Update to Go 1.20.10
 - Fix CVE-2023-39325
