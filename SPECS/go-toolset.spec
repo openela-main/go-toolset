@@ -1,13 +1,13 @@
-%global go_version 1.20.12
+%global go_version 1.21.7
 
 Name: go-toolset
 Version: %{go_version}
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Package that installs go-toolset
 License: BSD and Public Domain
 
 Requires: golang = %{go_version}
-%ifarch x86_64
+%ifarch x86_64 aarch64 ppc64le
 Requires: delve
 %endif
 ExcludeArch: %{ix86}
@@ -18,20 +18,28 @@ This is the main package for go-toolset.
 %files
 
 %changelog
-* Tue Dec 12 2023 David Benoit <dbenoit@redhat.com> - 1.20.12-1
-- Update to Go 1.20.12
-- Fix CVE-2023-39326
-- Resolves: RHEL-19231
+* Mon Apr 1 2024 Archana Ravindar <aravinda@redhat.com> - 1.21.7-2
+- Fixes CVE-2024-1394
+- Resolves RHEL-24300
 
-* Fri Oct 13 2023 David Benoit <dbenoit@redhat.com> - 1.20.10-1
-- Update to Go 1.20.10
-- Fix CVE-2023-39325
-- Midstream patches
-- Resolves: RHEL-12619
+* Tue Feb 13 2024 Alejandro Sáez <asm@redhat.com> - 1.21.7-1
+- Update to Go 1.21.7
+- Add aarch64 and ppc64le for Delve
+- Resolves: RHEL-24082
+- Resolves: RHEL-18363
+- Resolves: RHEL-18382
+
+* Fri Oct 20 2023 Archana Ravindar <aravinda@redhat.com> - 1.21.3-1
+- Update to Go 1.21.3
+- Resolves: RHEL-12620
 
 * Tue Aug 01 2023 Alejandro Sáez <asm@redhat.com> - 1.20.6-1
 - Rebase to Go 1.20.6
 - Resolves: rhbz#2226901
+
+* Wed May 31 2023 Alejandro Sáez <asm@redhat.com> - 1.20.4-1
+- Update to Go 1.20.4
+- Resolves: rhbz#2204477
 
 * Wed May 31 2023 Alejandro Sáez <asm@redhat.com> - 1.20.4-1
 - Rebase to Go 1.20.4
