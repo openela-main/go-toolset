@@ -1,8 +1,8 @@
-%global go_version 1.21.7
+%global go_version 1.21.9
 
 Name: go-toolset
 Version: %{go_version}
-Release: 2%{?dist}
+Release: 1%{?dist}
 Summary: Package that installs go-toolset
 License: BSD and Public Domain
 
@@ -18,6 +18,10 @@ This is the main package for go-toolset.
 %files
 
 %changelog
+* Fri Apr 12 2024 David Benoit <dbenoit@redhat.com> - 1.21.9-1
+- Fix CVE-2023-45288
+- Resolves: RHEL-31915
+
 * Mon Apr 1 2024 Archana Ravindar <aravinda@redhat.com> - 1.21.7-2
 - Fixes CVE-2024-1394
 - Resolves RHEL-24300
