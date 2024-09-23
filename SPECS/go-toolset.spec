@@ -1,4 +1,4 @@
-%global go_version 1.21.11
+%global go_version 1.21.13
 
 Name: go-toolset
 Version: %{go_version}
@@ -18,6 +18,10 @@ This is the main package for go-toolset.
 %files
 
 %changelog
+* Mon Aug 26 2024 Archana <aravinda@redhat.com> - 1.21.13-1
+- Fix CVE-2024-24791
+- Resolves: RHEL-47198
+
 * Thu Jun 13 2024 Archana Ravindar<aravinda@redhat.com> - 1.21.11-1
 - Rebase to Go1.21.11 that includes fixes for CVE-2024-24789 and CVE-2024-24790
 - Resolves: RHEL-40274
