@@ -1,4 +1,4 @@
-%global go_version 1.21.13
+%global go_version 1.22.7
 
 Name: go-toolset
 Version: %{go_version}
@@ -18,25 +18,31 @@ This is the main package for go-toolset.
 %files
 
 %changelog
-* Mon Aug 26 2024 Archana <aravinda@redhat.com> - 1.21.13-1
-- Fix CVE-2024-24791
-- Resolves: RHEL-47198
+* Mon Sep 16 2024 David Benoit <dbenoit@redhat.com> - 1.22.7-1
+- Update to Go 1.22.7
+- Resolves: RHEL-58223
+- Resolves: RHEL-57961
+- Resolves: RHEL-57847
+- Resolves: RHEL-57860
 
-* Thu Jun 13 2024 Archana Ravindar<aravinda@redhat.com> - 1.21.11-1
-- Rebase to Go1.21.11 that includes fixes for CVE-2024-24789 and CVE-2024-24790
-- Resolves: RHEL-40274
+* Fri Jul 12 2024 Archana <aravinda@redhat.com> - 1.22.5-1
+- Rebase to Go1.22.5 to fix CVE-2024-24791
+- Resolves: RHEL-46972
 
-* Thu May 23 2024 David Benoit <dbenoit@redhat.com> - 1.21.10-1
-- Update to Go 1.21.10
-- Resolves: RHEL-36993
+* Fri Jun 07 2024 Archana <aravinda@redhat.com> - 1.22.4-1
+- Addresses CVEs-2024-24789 and CVE-2024-24790
+- Resolves: RHEL-40157
 
-* Fri Apr 12 2024 David Benoit <dbenoit@redhat.com> - 1.21.9-1
-- Fix CVE-2023-45288
-- Resolves: RHEL-31915
+* Thu May 23 2024 David Benoit <dbenoit@redhat.com> - 1.22.3-1
+- Update to Go 1.22.3
+- Resolves: RHEL-35884
+- Resolves: RHEL-35075
+- Resolves: RHEL-35632
+- Resolves: RHEL-35901
 
-* Mon Apr 1 2024 Archana Ravindar <aravinda@redhat.com> - 1.21.7-2
-- Fixes CVE-2024-1394
-- Resolves RHEL-24300
+* Fri May 03 2024 Alejandro Sáez <asm@redhat.com> - 1.22.2-1
+- Update to Go 1.22.2
+- Resolves: RHEL-33157
 
 * Tue Feb 13 2024 Alejandro Sáez <asm@redhat.com> - 1.21.7-1
 - Update to Go 1.21.7
