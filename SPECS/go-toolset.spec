@@ -1,4 +1,4 @@
-%global go_version 1.22.7
+%global go_version 1.22.9
 
 Name: go-toolset
 Version: %{go_version}
@@ -18,6 +18,10 @@ This is the main package for go-toolset.
 %files
 
 %changelog
+* Thu Nov 14 2024 David Benoit <dbenoit@redhat.com> - 1.22.9-1
+- Update to Go 1.22.9
+- Resolves: RHEL-67668
+
 * Mon Sep 16 2024 David Benoit <dbenoit@redhat.com> - 1.22.7-1
 - Update to Go 1.22.7
 - Resolves: RHEL-58223
