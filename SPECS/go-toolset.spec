@@ -1,4 +1,4 @@
-%global go_version 1.22.9
+%global go_version 1.23.6
 
 Name: go-toolset
 Version: %{go_version}
@@ -18,6 +18,15 @@ This is the main package for go-toolset.
 %files
 
 %changelog
+* Fri Mar 21 2025 David Benoit <dbenoit@redhat.com> - 1.23.6-1
+- Update to Go 1.23.6
+- Resolves: RHEL-83824
+
+* Tue Jan 21 2025 Archana <aravinda@redhat.com> - 1.22.11-1
+- Rebase to Go1.22.11 to pick up fixes for CVEs 2024-45341 and 2024-45336
+- Go rebase addresses test failures with expired certificates
+- Resolves: RHEL-73752
+
 * Thu Nov 14 2024 David Benoit <dbenoit@redhat.com> - 1.22.9-1
 - Update to Go 1.22.9
 - Resolves: RHEL-67668
